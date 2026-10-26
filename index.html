@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Presence</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=JetBrains+Mono&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Libraries: p5.js and Firebase (Realtime Database only) -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+
+    <!-- Your files, then the plumbing, then your sketch -->
+    <script src="config.js"></script>
+    <script src="lib/sensor.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <div id="sensor-status"></div>
+  </body>
+</html>

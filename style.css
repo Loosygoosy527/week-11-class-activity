@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #efe9dc;
+}
+
+canvas {
+  display: block;
+}
+
+/* Connection status, top right. Delete this block to hide it in an exhibition. */
+#sensor-status {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px 4px 22px;
+  font: 12px/1.4 "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color: #1d1b18;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #1d1b18;
+}
+#sensor-status::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: #8a8378;
+}
+#sensor-status[data-state="live"]::before {
+  background: #2f8a55;
+}
+#sensor-status[data-state="practice"]::before {
+  background: #c08a2b;
+}
+#sensor-status[data-state="waiting"]::before {
+  background: #c08a2b;
+}
+#sensor-status[data-state="error"]::before {
+  background: #b5432b;
+}
